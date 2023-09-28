@@ -11,6 +11,11 @@
   <body>
     <h1>Exercici 11</h1>
     <p>Write your name: <input id="name" type="text" /></p>
-    <button onclick="execute">Execute</button>
+    <button onclick="execute()">Execute</button>
+    <script>
+      function execute() {
+        document.cookie = document.getElementById('name').value;
+      }
+    </script>
   </body>
 </html>
